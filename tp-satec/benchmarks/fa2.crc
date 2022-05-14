@@ -1,0 +1,10 @@
+circ full_adder {
+     inputs: a, b, cin
+     outputs: s, cout
+     x = ~(~(a|a) | ~(b|b))
+     y = ~( ~(a|b) | x)
+     z = ~( ~(y|y) | ~(cin|cin) )
+     w = ~(x|z)
+     s = ~( z | ~(y|cin))     
+     cout = ~(w|w)
+}

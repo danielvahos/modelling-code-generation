@@ -1,0 +1,6 @@
+circ twoa {
+     inputs: a, b
+     outputs: c, d
+     c = a & b
+     d = ~(a | b)
+}

@@ -1,0 +1,24 @@
+digraph full_adder {
+  rankdir="LR";
+  a [label="a", shape=circle];
+  b [label="b", shape=circle];
+  cin [label="cin", shape=circle];
+  cout [label="cout", shape=diamond];
+  s [label="s", shape=diamond];
+  s0 [label="s0", shape=hexagon];
+  8 [label="^", shape=square, style=filled, color=gray];
+  a -> 8;
+  b -> 8;
+  8 -> s0  16 [label="&", shape=square, style=filled, color=gray];
+  a -> 16;
+  b -> 16;
+  19 [label="&", shape=square, style=filled, color=gray];
+  s0 -> 19;
+  cin -> 19;
+  20 [label="|", shape=square, style=filled, color=gray];
+  16 -> 20;
+  19 -> 20;
+  20 -> cout  12 [label="^", shape=square, style=filled, color=gray];
+  s0 -> 12;
+  cin -> 12;
+  12 -> s}

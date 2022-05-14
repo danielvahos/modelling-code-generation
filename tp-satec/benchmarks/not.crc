@@ -1,0 +1,5 @@
+circ xor {
+     inputs: a
+     outputs: c
+     c =  ~a
+}

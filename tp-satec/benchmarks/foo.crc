@@ -1,0 +1,9 @@
+circ foo {
+     inputs: a, b, c, d, e
+     outputs: x, y, z
+     x = a & ~b
+     y = a | b | c ^ p
+     z = x ^ y & d & e     
+     p = 1 & q & q
+     q = 0
+}

@@ -1,0 +1,5 @@
+circ xor {
+     inputs: a, b
+     outputs: c
+     c = a ^ b
+}
